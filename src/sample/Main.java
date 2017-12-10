@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         Scanner toSend = new Scanner(System.in);
-        Socket echoSocket = new Socket("127.0.0.1", 6666);
+        Socket echoSocket = new Socket("localhost", 6666);
         Scanner sc = new Scanner(echoSocket.getInputStream());
         PrintWriter printer = new PrintWriter(echoSocket.getOutputStream(),true);
         while(true)
